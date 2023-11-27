@@ -1,0 +1,38 @@
+﻿@using TuyenDungCNTT.Models.Dao
+@model TuyenDungCNTT.Models.ViewModels.TinTuyenDung.TinTuyenDungSearch
+
+@{
+    TinTuyenDungDao dao = new TinTuyenDungDao();
+    var listCapBac = dao.ListCapBac();
+    var listDiaChi = dao.ListDiaChi();
+}
+
+@using (Html.BeginForm("Search", "Home", FormMethod.Get, new { @id = "search__form", @class = "main__search--form row" }))
+{
+    <div class="col l-4 m-4 c-6">
+        <div class="search__item">
+            <input class="search__input" id="keyword" name="KeyWord" autocomplete="off" type="text" placeholder="Từ khóa công việc..." value="@Request["KeyWord"]">
+            <div class="search__autocom--box">
+
+            </div>
+        </div>
+    </div>
+    <div class="search__item col l-3 m-3 c-6">
+        <span class="search__icon search__icon--rank">
+            <i class="far fa-id-badge"></i>
+        </span>
+        @Html.DropDownListFor(x=> x.CapBac, new SelectList(listCapBac, "PK_sMaCapBac", "sTenCapBac"), "-- Chọn cấp bậc --", new { @class = "form-control text-box single-line selectpicker", @data_live_search = "true" })
+    </div>
+    <div class="search__item col l-3 m-3 c-6">
+        <span class="search__icon search__icon--address">
+            <i class="fas fa-map-marker-alt"></i>
+        </span>
+        @Html.DropDownListFor(x=>x.DiaChi, new SelectList(listDiaChi, "PK_sMaDiaChi", "sTenDiaChi"), "-- Chọn địa chỉ --", new { @class = "form-control text-box single-line selectpicker", @data_live_search = "true" })
+    </div>
+    <div class="search__item col l-2 m-2 c-3">
+        <button class="search__submit button--link">
+            <span><i class="icon-search fas fa-search"></i></span>
+            Tìm kiếm
+        </button>
+    </div>
+}
