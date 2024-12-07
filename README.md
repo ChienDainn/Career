@@ -6,20 +6,21 @@
 
 ## **🔍Project Overview**  
 
--   
+-   The proposed system aims to help IT students find jobs quickly, efficiently, and conveniently.
+ 
+## **📌Specific Goals**  
 
-- The results obtained from the project are a dataset of 3647 restaurants with information such as food prices, opening hours, location, and number of reviews,… for use in building a Sentiment Analysis model.    
+-   Survey, Analyze, and Design: Conduct a thorough analysis and design of the system.
+-   System Development: Build a job search platform tailored for IT students.
 
+- **Key Features:**
+  For Students:
+    - After logging in, students can search for jobs using filters like skills, positions, company names, locations, etc.
 
-## **📌Business Goal**  
-
-Optimizing the data collection process using the Selenium library to obtain two data tables with the necessary information for building machine learning models.  
-
-- **Restaurant Table:**  
-    - RestaurantID: The unique identifier for each restaurant.  
-
-    - Restaurant Name: The name of the restaurant.  
-
+    - Upon finding a suitable job:
+        +   With a CV: Students can apply directly by submitting their CV.
+        +   Without a CV: Students can save job postings and create a CV directly on the platform.
+  For Recruiters:
     - Address: The physical address of the restaurant.  
 
     - Time: The restaurant's operating hours.  
