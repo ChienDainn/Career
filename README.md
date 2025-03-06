@@ -45,5 +45,5 @@
 #### **III. Result**
 
 - Login - homepage 
-![img alt]https://github.com/ChienDainn/Carrer/blob/master/PictureRM/1.jpg?raw=true
+- ![image alt]https://github.com/ChienDainn/Carrer/blob/master/PictureRM/1.jpg?raw=true
 
