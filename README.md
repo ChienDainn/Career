@@ -51,3 +51,5 @@
 - ![image alt](https://github.com/ChienDainn/Carrer/blob/master/PictureRM/5.jpg?raw=true)
 - ![image alt](https://github.com/ChienDainn/Carrer/blob/master/PictureRM/8.jpg?raw=true)
 
+### Tag
+`identity` `sql-server` `seeding` `entity-framework-core` `aspnet-core` `repository-pattern` `jwt-authentication` `automapper` `bootstrap` `
