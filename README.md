@@ -20,50 +20,30 @@
     - Upon finding a suitable job:
         +   With a CV: Students can apply directly by submitting their CV.
         +   Without a CV: Students can save job postings and create a CV directly on the platform.
+    -View posts, read tips to find a job more easily.
+        + Save suitable job postings.
+        + Create profile directly on the system.
   For Recruiters:
-    - Address: The physical address of the restaurant.  
-
-    - Time: The restaurant's operating hours.  
-
-    - Price: The price range of the restaurant's food.  
-
-- **Review Table:**  
-    - UserID: The unique identifier for each review.   
-
-    - User: The name of the person who wrote the review.  
-
-    - Review Time: The date and time that the review was written.  
-
-    - Rating: The reviewer's rating of the restaurant.  
-
-    - Comment: The reviewer's written feedback about the restaurant.  
-    
-    - RestaurantID: The ID of the restaurant that the review is about.  
-
-
-## **🗂Work Scope**
-
-- Collect restaurant data from online 
-
-- Complete all information as per the two tables in the objectives outlined.  
-
-
-## **💡
-
-#### **
-
+    - Recruiter is the subject of recruitment on the system. 
+    - Update employer information on the system.
+    - Post articles and recruitment news to the system.
+    - Search and view candidates' resumes.
+    - Contact candidates via provided phone number or email.
+  Administrator:
+      + The administrator is the person who operates the system.
+      + Manage account information.
+      + Censorship recruitment news and articles.
+      + Manage candidate and employer information.
 
 ## **💻Technologies and Tools**  
 
-- 
-
-
-## **🛠Work Reference**  
-
-#### **
-
-
-#### **II. Crawl Infomations Necessary**  
-
-
+- Auth & Security: JWT authentication, role-based access, route guards, HTTP.
+- Backend: Entity Framework Core, Repository pattern, Dependency Injection, filtering, sorting.
+- Frontend: Blazor, HTTP interceptors, Bootstrap, responsive design, dynamic UI components, state management.
+- Features: Job search, application submission, recruitment management, job posting moderation, statistical reporting.
+  
 #### **III. Result**
+
+- Login - homepage 
+https://github.com/ChienDainn/Carrer/blob/master/PictureRM/1.jpg?raw=true
+
