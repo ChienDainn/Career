@@ -49,7 +49,5 @@
 - ![image alt](https://github.com/ChienDainn/Carrer/blob/master/PictureRM/3.jpg?raw=true)
 - ![image alt](https://github.com/ChienDainn/Carrer/blob/master/PictureRM/4.jpg?raw=true)
 - ![image alt](https://github.com/ChienDainn/Carrer/blob/master/PictureRM/5.jpg?raw=true)
-- ![image alt](https://github.com/ChienDainn/Carrer/blob/master/PictureRM/6 -danh sach tdung.jpg?raw=true)
-- ![image alt](https://github.com/ChienDainn/Carrer/blob/master/PictureRM/2.jpg?raw=true)
-- ![image alt](https://github.com/ChienDainn/Carrer/blob/master/PictureRM/2.jpg?raw=true)
+- ![image alt](https://github.com/ChienDainn/Carrer/blob/master/PictureRM/8.jpg?raw=true)
 
