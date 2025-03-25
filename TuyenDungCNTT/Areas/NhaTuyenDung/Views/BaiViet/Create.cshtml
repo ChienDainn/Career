@@ -23,50 +23,48 @@
                     <h4 class="header-title mb-0">Tạo bài viết</h4>
                 </div>
                 <div class="collapse pt-3 show">
-                    <!-- Bắt đầu biểu mẫu tạo mới bài viết -->
                     @using (Html.BeginForm("Create", "BaiViet", FormMethod.Post, new { enctype = "multipart/form-data" }))
                     {
-                        @Html.AntiForgeryToken() <!-- Phiên bảo vệ chống CSRF -->
+                        @Html.AntiForgeryToken()
 
                         <div class="form-horizontal">
-                            @Html.ValidationSummary(true, "", new { @class = "text-danger" }) <!-- Tổng kết lỗi -->
+                            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
 
                             <div class="form-group align-items-center row">
-                                @Html.LabelFor(model => model.TenBaiViet, "Tên bài viết", new { @class = "control-label col-md-2" }) <!-- Nhãn "Tên bài viết" -->
+                                @Html.LabelFor(model => model.TenBaiViet, "Tên bài viết", new { @class = "control-label col-md-2" })
                                 <div class="col-md-6">
-                                    @Html.TextAreaFor(model => model.TenBaiViet, new { @class = "form-control" }) <!-- Vùng văn bản cho "Tên bài viết" -->
-                                    @Html.ValidationMessageFor(model => model.TenBaiViet, "", new { @class = "text-danger" }) <!-- Thông báo lỗi -->
+                                    @Html.TextAreaFor(model => model.TenBaiViet, new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(model => model.TenBaiViet, "", new { @class = "text-danger" })
                                 </div>
                             </div>
 
                             <div class="form-group align-items-center row">
-                                @Html.LabelFor(model => model.AnhChinh, "Ảnh chính", new { @class = "control-label col-md-2" }) <!-- Nhãn "Ảnh chính" -->
+                                @Html.LabelFor(model => model.AnhChinh, "Ảnh chính", new { @class = "control-label col-md-2" })
                                 <div class="col-md-6">
-                                    <input name="Image" type="file" accept="image/*" /> <!-- Ô tải lên ảnh chính -->
+                                    <input name="Image" type="file" accept="image/*" />
                                 </div>
                             </div>
 
                             <div class="form-group align-items-center row">
-                                @Html.LabelFor(model => model.NoiDung, "Nội dung", new { @class = "control-label col-md-2" }) <!-- Nhãn "Nội dung" -->
+                                @Html.LabelFor(model => model.NoiDung, "Nội dung", new { @class = "control-label col-md-2" })
                                 <div class="col-md-10">
-                                    @Html.TextAreaFor(model => model.NoiDung, new { @class = "form-control", id = "txtNoiDung" }) <!-- Vùng văn bản cho "Nội dung" -->
-                                    @Html.ValidationMessageFor(model => model.NoiDung, "", new { @class = "text-danger" }) <!-- Thông báo lỗi -->
+                                    @Html.TextAreaFor(model => model.NoiDung, new { @class = "form-control", id = "txtNoiDung" })
+                                    @Html.ValidationMessageFor(model => model.NoiDung, "", new { @class = "text-danger" })
                                 </div>
                             </div>
 
                             <div class="form-group align-items-center row mt-3">
                                 <div class="col-md-2">
-                                    @Html.ActionLink("Trở về", "Index", "BaiViet", null, new { @class = "btn btn-light" }) <!-- Liên kết "Trở về" -->
+                                    @Html.ActionLink("Trở về", "Index", "BaiViet", null, new { @class = "btn btn-light" })
                                 </div>
 
                                 <div class="col-md-6">
-                                    <input type="submit" value="Tạo mới" class="btn btn-primary" /> <!-- Nút gửi biểu mẫu -->
+                                    <input type="submit" value="Tạo mới" class="btn btn-primary" />
                                 </div>
                             </div>
                         </div>
                     }
                 </div>
-
             </div>
         </div>
     </div>

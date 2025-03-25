@@ -16,33 +16,25 @@
 
 <div class="main__wrapper grid wide">
     <div class="main__image">
-        <!-- Kiểm tra xem có hình ảnh bìa (AnhBia) hay không -->
         @if (Model.AnhBia != null)
         {
-            <!-- Nếu có hình ảnh bìa, hiển thị nó dưới dạng nền của phần này -->
             <div class="main__image--conver bg-img" style="background-image: url(@Model.AnhBia);"></div>
         }
-        <!-- Nếu không có hình ảnh bìa, sử dụng hình ảnh mặc định -->
         else
         {
-        <div class="main__image--conver bg-img" style="background-image: url(../../Assets/Client/img/cover-default.jpg);"></div>
+            <div class="main__image--conver bg-img" style="background-image: url(../../Assets/Client/img/cover-default.jpg);"></div>
         }
-
-        <!-- Kiểm tra xem có hình ảnh đại diện (AnhDaiDien) hay không -->
         <div class="main__image--avatar">
             @if (Model.AnhDaiDien != null)
             {
-                <!-- Nếu có hình ảnh đại diện, hiển thị nó -->
                 <img class="full_width" src="@Model.AnhDaiDien" alt="Ảnh đại diện">
             }
-            <!-- Nếu không có hình ảnh đại diện, sử dụng hình ảnh đại diện mặc định -->
             else
             {
-            <img class="full_width" src="~/Assets/Client/img/Candidate/user-default.png" alt="Ảnh đại diện">
+                <img class="full_width" src="~/Assets/Client/img/Candidate/user-default.png" alt="Ảnh đại diện">
             }
         </div>
     </div>
-
     <h1 class="main__company--name">@Model.TenNTD</h1>
     <input id="MaNTD" type="hidden" value="@Model.MaNTD">
     <div class="main__company">
@@ -50,16 +42,13 @@
             <div class="company__introduce--info col c-8">
                 <div class="introduce__info--wrapper">
                     <h2>Giới thiệu nhà tuyển dụng</h2>
-                    <!--Đoạn mã Razor này kiểm tra xem dữ liệu mô tả (Model.MoTa) có tồn tại hay không. 
-                        Nếu có (khác null), nó sẽ hiển thị nội dung mô tả từ dữ liệu Model. 
-                        Nếu dữ liệu mô tả không tồn tại (null), nó sẽ thay thế bằng chuỗi "Chưa cập nhật"-->
                     <p style="white-space: pre-line">
                         @(Model.MoTa != null ? Model.MoTa : "Chưa cập nhật")
                     </p>
                     <h2>Việc làm cùng công ty</h2>
 
                     <div class="introduce__employer--list">
-
+                       
                     </div>
 
                     <div class="main__result--paging">
@@ -87,8 +76,6 @@
                     <ul class="company__introduce--list">
                         <li>
                             <strong>Website:</strong>
-                            <!-- Đoạn mã Razor này kiểm tra xem dữ liệu về website (Model.Website) có tồn tại (khác null) hay không. 
-                                Nếu có, nó hiển thị giá trị website đó. Nếu không có, nó hiển thị chuỗi "Chưa cập nhật."-->
                             <a href="@Model.Website" target="_blank">@(Model.Website != null ? Model.Website : "Chưa cập nhật")</a>
                         </li>
                         <li><strong>Quy mô: </strong>@(Model.QuyMo != null ? Model.QuyMo : "Chưa cập nhật")</li>

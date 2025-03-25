@@ -228,6 +228,7 @@
     <Content Include="Assets\Admin\css\bootstrap.min.css" />
     <Content Include="Assets\Admin\css\icons.min.css" />
     <Content Include="Assets\Admin\css\styles.css" />
+    <Content Include="Assets\Admin\img\logo.png" />
     <Content Include="Assets\Admin\img\users\avatar-1.jpg" />
     <Content Include="Assets\Admin\js\app.min.js" />
     <Content Include="Assets\Admin\js\baiVietChoDuyet.js" />
@@ -549,8 +550,6 @@
     <Content Include="Areas\NhaTuyenDung\Views\UngTuyen\ChuaXem.cshtml" />
     <Content Include="Areas\NhaTuyenDung\Views\UngTuyen\CapNhat.cshtml" />
     <Content Include="Areas\NhaTuyenDung\Views\UngTuyen\DeXuat.cshtml" />
-    <None Include="Properties\PublishProfiles\chiennguyen-001-site1 - FTP.pubxml" />
-    <None Include="Properties\PublishProfiles\chiennguyen-001-site1 - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />

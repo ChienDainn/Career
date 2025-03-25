@@ -1,7 +1,6 @@
 ﻿using System.Web;
 using System.Web.Optimization;
-//Gói được sử dụng để cải thiện thời gian tải yêu cầu. Nó làm giảm số lượng yêu cầu đến máy chủ
-//và giảm kích thước của nội dung được yêu cầu (chẳng hạn như CSS và JavaScript.)
+
 namespace TuyenDungCNTT
 {
     public class BundleConfig

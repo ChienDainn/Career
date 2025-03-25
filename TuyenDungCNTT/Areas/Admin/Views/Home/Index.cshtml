@@ -138,7 +138,7 @@
         </div>
     </div>
 </div>
-@*bảng chart số lượng người dùng*@
+
 <div class="row">
     <div class="col-xl-6">
         <div class="card mb-4">
@@ -155,12 +155,10 @@
                 <i class="fas fa-chart-pie me-1"></i>
                 Thống kê số lượng người dùng
             </div>
-            <div class="card-body"><canvas id="myPieChart" width="100" height="50"></canvas></div>
+            <div class="card-body"><canvas id="myPieChart" width="100%" height="50"></canvas></div>
         </div>
     </div>
 </div>
-
-
 
 <div class="row">
 
@@ -189,15 +187,14 @@
                                 @for (int i = 0; i < listView.Count; i++)
                                 {
                                     <tr>
-                                        <td>@(i + 1)</td>      <!-- Ô dữ liệu hiển thị số thứ tự (số dòng) -->
-                                        <td>@listView[i].TenCongViec</td>  <!-- Ô dữ liệu hiển thị tên công việc -->
-                                        <td>@listView[i].TenNTD</td>       <!-- Ô dữ liệu hiển thị tên nhà tuyển dụng -->
-                                        <td>@listView[i].NgayDang</td>     <!-- Ô dữ liệu hiển thị ngày đăng công việc -->
-                                        <td>@listView[i].LuotXem</td>      <!-- Ô dữ liệu hiển thị số lượt xem của công việc -->
+                                        <td>@(i + 1)</td>
+                                        <td>@listView[i].TenCongViec</td>
+                                        <td>@listView[i].TenNTD</td>
+                                        <td>@listView[i].NgayDang</td>
+                                        <td>@listView[i].LuotXem</td>
                                     </tr>
                                 }
                             </tbody>
-
                         </table>
                     </div>
                 </div>

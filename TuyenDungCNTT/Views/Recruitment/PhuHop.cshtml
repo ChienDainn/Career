@@ -21,21 +21,15 @@
     <script src="~/Assets/Client/js/searchResult.js"></script>
 
     <script>
-        // Gọi hàm load để tải trang và hiển thị kết quả tìm kiếm ban đầu
         load("/Recruitment/GetPaging", $('#keyword').val(), 1, $('#CapBac').val(), $('#DiaChi').val(), null, null, null);
 
-        // Đặt sự kiện click cho các phần tử li a trong phân trang
         $("body").on("click", ".result__paging--list li a", function (event) {
-            event.preventDefault();  // Ngăn chặn hành động mặc định của liên kết khi được nhấp
-            var page = $(this).attr('data-page');  // Lấy giá trị trang từ thuộc tính data-page của liên kết
-            // Gọi lại hàm load với trang được chọn và các tham số tìm kiếm
+            event.preventDefault();
+            var page = $(this).attr('data-page');
             load("/Recruitment/GetPaging", $('#keyword').val(), page, $('#CapBac').val(), $('#DiaChi').val(), null, null, null);
         });
     </script>
-
 }
-
-
 
 <div class="main__fixed bg-img"></div>
 <div class="main__search">
